@@ -10,7 +10,7 @@ namespace CommonLib.Presenters
     public class Presenter<T> where T : IBaseInterface
     {
         protected static IModel Model { get; private set; }
-        protected T View { get; private set; }
+        public T View { get; private set; }
 
         static Presenter()
         {
